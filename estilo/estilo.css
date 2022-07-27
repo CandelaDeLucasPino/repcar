@@ -25,7 +25,16 @@ align-items: center;
     justify-content: left;
     flex-grow: 1;
 }
-
+#slide-1{
+    background-image: url(../imagenes/ruedastiradas.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+}
 .fondo{
     background-color: #F5A220;
 }
@@ -70,7 +79,6 @@ a.nav-link{
     font-family: 'Allerta', sans-serif;
     width: 200px;
     height: 60px;
-    margin-left: 167px;
     color: #F5A220;
     margin-bottom: 5%;
 }
