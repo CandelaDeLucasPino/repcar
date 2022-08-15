@@ -9,31 +9,71 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+background-color: #E5E5E5;
        
 }
-.showcase{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: start;
-    width: 100%;
-}
-.carousel-item .active{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: left;
-    flex-grow: 1;
+.nav-link{
+    font-family: 'Allerta', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+
 }
 
-.fondo{
-    background-color: #F5A220;
+#SLIDE_BG{
+    width: 100%;
+    height: 100vh;
+    margin-top: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    backface-visibility: hidden;
+    animation: slidebg 8s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../imagenes/7.png');
 }
-a.nav-link{
+@keyframes slidebg {
+    0% {
+        background-image: url('../imagenes/7.png')
+    }
+    25% {
+        background-image: url('../imagenes/8.png')
+    }
+}
+.primero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10% 10% 5% 10%;
+}
+.texto1{
     font-family: 'Allerta', sans-serif;
-    width: 110px;
-    font-weight: bold;
-    color:#354248;
+    width: 95%;
+    height: 150px;
+    margin-top: -5%;
+    font-size: 40px;
+    text-align: left;
+    line-height: 37px;
+    letter-spacing: 0.75px;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+    
+}
+.boton{
+    font-family: 'Allerta', sans-serif;
+    width: 200px;
+    height: 60px;
+    color: #F5A220;
+ 
+}
+.container-fluid{
+    display: flex;
+    justify-content: flex-end !important;
+}
+#navbarNav{
+    width: 50%;
 }
 
 .logo{
@@ -41,61 +81,145 @@ a.nav-link{
     width: 98px;
     justify-content: flex-end;
 }
-.container-fluid{
-    display: flex;
-    justify-content: flex-end !important;
-}
-.texto1boton{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    top:15%;
-}
-.texto1{
-    font-family: 'Allerta', sans-serif;
-    font-size: 36px;
-    text-align: left;
-    line-height: 37px;
-    letter-spacing: 0.75px;
-    color: black;
-    font-weight: bolder;
-    padding: 0 50% 3% 5%;
-    margin-bottom: 0;
 
-    
-}
-.boton{
-    font-family: 'Allerta', sans-serif;
-    width: 200px;
-    height: 60px;
-    margin-left: 167px;
-    color: #F5A220;
-    margin-bottom: 5%;
-}
 #productos{
     font-family: 'Allerta', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    margin: 5% 7% 5% 7%;
+    font-size: 48px;
+    text-align: left;
+    margin: 6% 0% 3% 5%;
     align-self: flex-start;
+    width: 40%;
+    height: 20%;
+    color: black;
     }
-.carousel-item .active{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    
-} 
+    .carousel1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: 60vh;
+        margin: 3% 8% 3% 8%; 
+    }
+
+    #carousel{
+        width: 450px;
+        height: 460px; 
+        background-repeat: no-repeat;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-right: 5%;
+        background-size: cover;
+        background-position: 14% 0%;
+        backface-visibility: hidden;
+        animation: slidebg1 8s linear infinite 0s;
+        animation-timing-function: ease-in-out;
+        background-image: url('../imagenes/1.png');
+    }
+    @keyframes slidebg1 {
+        0% {
+            background-image: url('../imagenes/1.png')
+        }
+        25% {
+            background-image: url('../imagenes/2.png')
+        }
+    }
+    .vehicle{
+        width: 450px;
+        background-color: white;
+        color:black;
+        font-family: 'Allerta', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 443px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 15px 0 20px 0;
+    }
+
+    #carousel2{
+            width: 450px;
+            height: 225px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 14% 0%;
+            margin-bottom: 12%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            backface-visibility: hidden;
+            animation: slidebg2 8s linear infinite 0s;
+            animation-timing-function: ease-in-out;
+            background-image: url('../imagenes/3.png');
+    }
+        @keyframes slidebg2 {
+            0% {
+                background-image: url('../imagenes/3.png')
+            }
+            25% {
+                background-image: url('../imagenes/4.png')
+            }
+        }
+        .spare{
+                width: 450px;
+                background-color: white;
+                color:black;
+                text-align: center;
+                position: relative;
+                top:180px;
+                font-family: 'Allerta', sans-serif;
+                font-size: 24px;
+                text-transform: uppercase;
+                padding: 10px 0 10px 0;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            
+        }
+        #carousel3{
+            width: 450px;
+            height: 225px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-position: 14% 0%;
+            backface-visibility: hidden;
+            animation: slidebg3 8s linear infinite 0s;
+            animation-timing-function: ease-in-out;
+            background-image: url('../imagenes/5.png');
+    }
+        @keyframes slidebg3 {
+            0% {
+                background-image: url('../imagenes/5.png')
+            }
+            25% {
+                background-image: url('../imagenes/6.png')
+            }
+        }
+    .illumination{
+            width: 450px;
+            background-color: white;
+            color:black;
+            text-align: center;
+            position: relative;
+            top:180px;
+            font-family: 'Allerta', sans-serif;
+            font-size: 24px;
+            text-transform: uppercase;
+            padding: 10px 0 10px 0;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+    }
 .caja2{
-    background: url(../imagenes/interior_Mesa\ de\ trabajo\ 1.png) no-repeat center;
-    background-size: cover;
+    background: url(../imagenes/interior_Mesa\ de\ trabajo\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     width: 100%;
     height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin:15% 0% 0% 0%;
 }
 
 .img2{
@@ -121,14 +245,15 @@ a.nav-link{
     line-height: 37px;
     letter-spacing: 0.75px;
     font-weight: bolder;
-    padding: 0 5% 0 5%;
+    padding: 0 2% 0 2%;
+    text-transform: uppercase;
+    width: 100%;
     
 }
 .need{
     font-family: 'Allerta', sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    margin: 5% 7% 5% 7%;
+    font-size: 48px;
+    margin: 7% 7% 3% 3%;
     align-self: flex-start;
 }
 .muestrario{
@@ -138,15 +263,20 @@ a.nav-link{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    margin:5% 5% 5% 5%;
+    margin:2% 5% 5% 5%;
+    background-color: #E5E5E5;
 }
 .catalogo{
-    width: 15%;
-    height: 20%;
-    margin:2.5% 2.5% 2.5% 2.5%;
+    width: 16%;
+    height: 300;
+    margin:2.5% 1% 2.5% 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: white;
+    padding: 1% 1% 1% 1%;
+
+
 }
 .card-title{
 text-align: center;
@@ -171,9 +301,15 @@ footer{
     width: 110px;
 }
 .final{
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
+    font-family: 'Allerta', sans-serif;
+    letter-spacing: 0.75px;
+    font-weight: 400;
+
 }
 .datos{
-    font-size: 10px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
