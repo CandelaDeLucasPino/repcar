@@ -231,8 +231,8 @@ background-color: #E5E5E5;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
     }
-.caja2{
-    background: url(../imagenes/interior_Mesa\ de\ trabajo\ 1.png);
+#services{
+    background: url('../imagenes/Group\ 10\ \(1\).png');
     background-repeat: no-repeat;
     background-size: 100% auto;
     width: 100%;
@@ -359,4 +359,12 @@ footer{
     height: 92px;
     margin-left: calc(10% - 252px/2 + 1px);
 
+}
+#contacto{
+    background-image: url('../imagenes/Group\ 11.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 50vh;
 }
